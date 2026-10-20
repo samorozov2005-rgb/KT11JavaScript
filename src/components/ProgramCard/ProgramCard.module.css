@@ -1,0 +1,47 @@
+.card {
+  min-height: 480px;
+  padding: 102px 20% 50px;
+  color: var(--white);
+  background: var(--card-background);
+  background-position: center;
+  background-size: cover;
+}
+
+.card::before {
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin-bottom: 30px;
+  content: '';
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.card h3 {
+  position: relative;
+  font-size: 32px;
+  line-height: 1.12;
+}
+
+.card h3::before {
+  position: absolute;
+  top: 12px;
+  left: -28px;
+  width: 10px;
+  height: 10px;
+  content: '';
+  background: #e9b730;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  .card {
+    min-height: 360px;
+    padding-top: 78px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    min-height: 320px;
+  }
+}
